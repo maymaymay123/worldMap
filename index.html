@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title> Countries Game </title> 
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=ZCOOL+XiaoWei" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:wght@100" rel="stylesheet">
+      <div id="head-container">
+        <h1 id="header1">How many Countries in the World do you know?</h1>
+
+        <audio id="music" src="./music.mp3" preload="auto">
+        </audio>
+        <a id="musicBox" onClick="togglePlay()">Music</a>
+
+        <h3 id="header3"> Let's see if you can guess all of them! </h3>
+          <button id="start-btn">Start</button>
+        <div id="buttoncontainer">
+          <span id="percentage"></span>
+          
+          <span id="time-container"></span>
+        </div>
+        <div id="button2container"></div>
+          <button id="submit-btn">Submit</button>
+          <input id="resetbutton" type="reset">
+          <span id="giveup">Give Up</span>
+          <input id="text-box" placeholder="Answer and Enter">
+          <div id="displayscore"></div>
+          <div id="message"></div>
+        </div>
+      </div>
+  </head>
+
+  <body>
+      <div id="pic-container">
+        <img id="pic" src="./worldmap2.png" draggable="false"/>
+      </div>
+      <div id="body-container">
+        <h4 id="correctTitle">Correct Answers: </h4>
+        <div id="youranswerlist"></div>
+        <br>
+        <span id="unanswered-list"></span>
+        <br>
+        <span id="congratz"></span>
+      </div>
+      <div id="continent-score">
+        <article id="africaScore"></article>
+        <article id="asiaScore"></article>
+        <article id="northScore"></article>
+        <article id="southScore"></article>
+        <article id="europeScore"></article>
+        <article id="oceaniaScore"></article>
+      </div>
+      <div id="continent-box">
+        <div id="unansweredTitle"></div>
+        <div id="africa-box"></div>
+        <div id="asia-box"></div>
+        <div id="north-america-box"></div>
+        <div id="south-america-box"></div>
+        <div id="europe-box"></div>
+        <div id="oceania-box"></div>
+      </div>
+
+    <script src="countries_list.js" charset="utf-8"></script>
+    <script src="script.js" charset="utf-8"></script>
+  </body>
+</html>

@@ -1,0 +1,304 @@
+
+
+body {
+    background-color: pink;
+    text-align: center;
+    max-width: 900px;
+    margin: auto;
+    background-size: cover;
+  } 
+
+  
+  h1{
+    font-family: ZCOOL XiaoWei;
+  }
+  
+  h3{
+    font-family: Lato;
+    color: rgb(52, 55, 231);
+  }
+
+
+  #button2container{
+    max-width: 100px;
+  }
+
+  #text-box {
+    visibility: hidden;
+  }
+
+  #submit-btn {
+    visibility: hidden;
+  }
+
+  #resetbutton{
+    visibility: hidden;
+    float: left;;
+  }
+  
+  #giveup{
+    visibility: hidden;
+    float: right;
+    color: blueviolet;
+    text-decoration-line: underline;
+  }
+
+  #displayscore{
+    visibility: hidden;
+  }
+  
+  #percentage{
+    float: left;
+  }
+
+  #youranswerlist{
+    column-count: 7;
+  }
+
+  #correctTitle{
+    visibility: hidden;
+  }
+
+
+img {
+  max-width: 900px;
+  text-align: center;
+  visibility: visible;
+  margin: auto;
+  position: relative;
+  background-size: cover;
+}
+
+
+#continentScore{
+  position: relative;
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+}
+
+#africaScore{
+  background-color: black;
+  color: white;
+  position: absolute;
+  z-index: 10;
+  margin: 0 auto;
+  top: 65%; left: 48%;
+}
+
+
+#asiaScore{
+  background-color: black;
+  color: white;
+  top: 48%; left: 62%;
+  position: absolute;
+}
+
+#northScore{
+  background-color: black;
+  color: white;
+  top: 50%; left: 25%;
+  position: absolute;
+}
+
+#southScore{
+  background-color: black;
+  color: white;
+  top: 80%; left: 30%;
+  position: absolute;
+}
+
+#europeScore{
+  background-color: black;
+  color: white;
+  top: 43%; left: 48%;
+  position: absolute;
+}
+
+#oceaniaScore{
+  background-color: black;
+  color: white;
+  top: 79%; left: 78%;
+  position: absolute;
+}
+
+@media (max-width: 870px) {
+  img{
+    max-width: 870px;
+  }
+
+  #oceaniaScore{
+    top: 79%; left: 78%;
+  }
+  
+}
+
+@media (max-width: 850px) {
+  img{
+    max-width: 850px;
+  }
+
+  #africaScore{
+    top: 65%; left: 53%;
+  }
+
+  #asiaScore{
+    top: 52%; left: 70%;
+  }
+
+  #northScore{
+    top: 50%; left: 17%;
+  }
+
+  #southScore{
+    top: 75%; left: 26%;
+  }
+
+  #europeScore{
+    top: 49%; left: 50%;
+  }
+  #oceaniaScore{
+    top: 79%; left: 85%;
+  }
+  
+}
+
+@media (max-width: 800px) {
+  img{
+    max-width: 800px;
+  }
+
+  #oceaniaScore{
+    top: 75%; left: 89%;
+  }
+}
+
+@media (max-width: 750px) {
+  img{
+    max-width: 750px;
+  }
+
+  #oceaniaScore{
+    top: 75%; left: 87%;
+  }
+}  
+
+@media (max-width: 700px) {
+  img{
+    max-width: 700px;
+  }
+
+  #oceaniaScore{
+    top: 76%; left: 87%;
+  }
+}
+  
+@media (max-width: 600px) {
+  img{
+    max-width: 600px;
+  }
+
+  #oceaniaScore{
+    top: 70%; left: 85%;
+  }
+  
+}
+
+@media (max-width: 400px) {
+  img{
+    max-width: 400px;
+  }
+
+  #africaScore{
+    top: 55%; left: 53%;
+  }
+
+  #asiaScore{
+    top: 47%; left: 70%;
+  }
+
+  #northScore{
+    top: 45%; left: 17%;
+  }
+
+  #southScore{
+    top: 55%; left: 26%;
+  }
+
+  #europeScore{
+    top: 43%; left: 50%;
+  }
+  #oceaniaScore{
+    top: 60%; left: 75%;
+  }
+  
+}
+
+
+#musicBox{
+  background-color: lightgray;
+  display: inline;
+  float: right;
+}
+
+#africa-box{
+  background-color: yellow;
+  border-radius: 30px;
+  border: 3px white solid;
+  color: black;
+  visibility: hidden;
+  padding: 10px;
+  margin: 20px;
+  
+}
+
+#asia-box{
+  background-color: orangered;
+  border-radius: 30px;
+  border: 3px white solid;
+  color: black;
+  visibility: hidden;
+  padding: 10px;
+  margin: 20px;
+}
+
+#north-america-box{
+  background-color: rgb(47, 224, 11);
+  border-radius: 30px;
+  border: 3px white solid;
+  color: black;
+  visibility: hidden;
+  padding: 10px;
+  margin: 20px;
+}
+
+#south-america-box{
+  background-color: green;
+  border-radius: 30px;
+  border: 3px white solid;
+  color: white;
+  visibility: hidden;
+  padding: 10px;
+  margin: 20px;
+}
+
+#europe-box{
+  background-color: red;
+  border-radius: 30px;
+  border: 3px white solid;
+  color: white;
+  visibility: hidden;
+  padding: 10px;
+  margin: 20px;
+
+}
+
+#oceania-box{
+  background-color: purple;
+  border-radius: 30px;
+  border: 3px white solid;
+  color: white;
+  visibility: hidden;
+  padding: 10px;
+  margin: 20px;
+}
