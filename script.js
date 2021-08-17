@@ -4,31 +4,32 @@
 //set global variables
 let country;
 let guessCount = 0;
-let mins = 15;
+let mins = 20;
 let secs = 0;
 let time;
 let score = 0;
 let percentage = 0;
 let correctAns=[];
+document.querySelector("#musicBox").style.cursor="pointer";
 
 let myAudio = document.querySelector("#music");
 let isPlaying = false;
 
 function togglePlay() {
-  isPlaying ? myAudio.pause() : myAudio.play();
+    isPlaying ? myAudio.pause() : myAudio.play();
 };
 
 myAudio.onplaying = function() {
-  isPlaying = true;
+    isPlaying = true;
 };
 myAudio.onpause = function() {
-  isPlaying = false;
+    isPlaying = false;
 };
 
 function startTimeFunction (event){
-  event.preventDefault();
-  myTimer();
-  time = setInterval(myTimer, 1000);
+    event.preventDefault();
+    myTimer();
+    time = setInterval(myTimer, 1000);
 }
 
 //set timer function, activate when clicked
@@ -42,8 +43,8 @@ function myTimer() {
 
     secs--;
     if (secs == -1) {
-				mins--;
-				secs = 59;
+		mins--;
+		secs = 59;
 		} 
     if (mins === 0 && secs <= 50){
         document.getElementById('time-container').style.color='red';
@@ -224,7 +225,7 @@ function standardizeInput(inputValue){
 
 //stop the time 
 function stopTime() {
-  clearInterval(time);
+    clearInterval(time);
 
 }
 
@@ -233,14 +234,14 @@ const giveupColumn = document.querySelector('#giveup');
 giveupColumn.style.cursor="pointer";
 
 function giveUpLink (event){
-  event.preventDefault()
-  //need to freeze the time
-  stopTime()
-  //disable the text-box
-  document.querySelector("#text-box").disabled = true;
-  showTheScore(correctAns);
-  continentBox();
-  document.querySelector("#giveup").style.visibility="hidden";
+    event.preventDefault()
+    //need to freeze the time
+    stopTime()
+    //disable the text-box
+    document.querySelector("#text-box").disabled = true;
+    showTheScore(correctAns);
+    continentBox();
+    document.querySelector("#giveup").style.visibility="hidden";
 
 }
 
@@ -281,32 +282,32 @@ function seeAnswerAfrica(event){
 document.querySelector("#africaScore").addEventListener('click', seeAnswerAfrica)
 
 function seeAnswerAsia(event){
-  document.querySelector("#asia-box").scrollIntoView();
-  document.querySelector('#asia-box').style.border="10px yellow solid";
+    document.querySelector("#asia-box").scrollIntoView();
+    document.querySelector('#asia-box').style.border="10px yellow solid";
 }
 document.querySelector("#asiaScore").addEventListener('click', seeAnswerAsia)
 
 function seeAnswerNorth(event){
-  document.querySelector("#north-america-box").scrollIntoView();
-  document.querySelector('#north-america-box').style.border="10px yellow solid";
+    document.querySelector("#north-america-box").scrollIntoView();
+    document.querySelector('#north-america-box').style.border="10px yellow solid";
 }
 document.querySelector("#northScore").addEventListener('click', seeAnswerNorth)
 
 function seeAnswerSouth(event){
-  document.querySelector("#south-america-box").scrollIntoView();
-  document.querySelector('#south-america-box').style.border="10px yellow solid";
+    document.querySelector("#south-america-box").scrollIntoView();
+    document.querySelector('#south-america-box').style.border="10px yellow solid";
 }
 document.querySelector("#southScore").addEventListener('click', seeAnswerSouth)
 
 function seeAnswerEurope(event){
-  document.querySelector("#europe-box").scrollIntoView();
-  document.querySelector('#europe-box').style.border="10px yellow solid";
+    document.querySelector("#europe-box").scrollIntoView();
+    document.querySelector('#europe-box').style.border="10px yellow solid";
 }
 document.querySelector("#europeScore").addEventListener('click', seeAnswerEurope)
 
 function seeAnswerOceania(event){
-  document.querySelector("#oceania-box").scrollIntoView();
-  document.querySelector('#oceania-box').style.border="10px yellow solid";
+    document.querySelector("#oceania-box").scrollIntoView();
+    document.querySelector('#oceania-box').style.border="10px yellow solid";
 }
 document.querySelector("#oceaniaScore").addEventListener('click', seeAnswerOceania)
 
