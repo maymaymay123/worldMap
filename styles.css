@@ -19,9 +19,6 @@ body {
   }
 
 
-  #button2container{
-    max-width: 100px;
-  }
 
   #text-box {
     visibility: hidden;
@@ -339,6 +336,15 @@ img {
   body{
     font-size: 6px;
   }
+ 
+  #text-box{
+    font-size: 6px;
+  }
+
+  #resetbutton{
+    font-size: 6px
+  }
+
   img{
     max-width: 345px;
   }
@@ -359,10 +365,10 @@ img {
   }
 
   #europeScore{
-    top: 26%; left: 49%;
+    top: 23%; left: 49%;
   }
   #oceaniaScore{
-    top: 42%; left: 83%;
+    top: 40%; left: 85%;
   }
 
 }
@@ -374,6 +380,15 @@ img {
   img{
     max-width: 260px;
   }
+
+  #text-box{
+    font-size: 6px;
+  }
+
+  #resetbutton{
+    font-size: 6px
+  }
+  
   #africaScore{
     top: 35%; left: 50%;
   }
