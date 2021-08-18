@@ -226,29 +226,7 @@ img {
   }
 }
   
-@media screen and (max-width: 600px){
-  #africaScore{
-    visibility: hidden;
-  }
-  #asiaScore{
-    visibility: hidden;
-  }
-  #southScore{
-    visibility: hidden;
-  }
-
-  #northScore{
-    visibility: hidden;
-  }
-  #europeScore{
-    visibility: hidden;
-  }
-
-  #oceaniaScore{
-    visibility: hidden;
-  }
-}
-/* @media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
   body{
     font-size: 12px;
   }
@@ -264,7 +242,7 @@ img {
     top: 70%; left: 85%;
   }
   
-} 
+}
 
 @media (max-width: 520px) {
   body{
@@ -400,7 +378,6 @@ img {
   }
 
 }
-*/
 
 #musicBox{
   background-color: lightskyblue;
