@@ -264,7 +264,7 @@ img {
     top: 70%; left: 85%;
   }
   
-} */
+} 
 
 @media (max-width: 520px) {
   body{
@@ -400,6 +400,7 @@ img {
   }
 
 }
+*/
 
 #musicBox{
   background-color: lightskyblue;
