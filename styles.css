@@ -344,6 +344,12 @@ img {
   #resetbutton{
     font-size: 6px
   }
+  #start-btn{
+    font-size: 6px;
+  }
+  #submit-btn{
+    font-size: 6px;
+  }
 
   img{
     max-width: 345px;
@@ -373,43 +379,51 @@ img {
 
 }
 
-@media (max-width: 260px) {
+@media (max-width: 305px) {
   body{
     font-size: 5px;
   }
   img{
-    max-width: 260px;
+    max-width: 305px;
   }
 
   #text-box{
-    font-size: 6px;
+    font-size: 5px;
   }
 
   #resetbutton{
-    font-size: 6px
+    font-size: 5px
   }
-  
+
+  #start-btn{
+    font-size: 5px;
+  }
+
+  #submit-btn{
+    font-size: 5px;
+  }
+
   #africaScore{
-    top: 35%; left: 50%;
+    top: 25%; left: 50%;
   }
 
   #asiaScore{
-    top: 27%; left: 69%;
+    top: 19%; left: 69%;
   }
 
   #northScore{
-    top: 27%; left: 17%;
+    top: 20%; left: 17%;
   }
 
   #southScore{
-    top: 38%; left: 26%;
+    top: 33%; left: 26%;
   }
 
   #europeScore{
-    top: 26%; left: 49%;
+    top: 20%; left: 49%;
   }
   #oceaniaScore{
-    top: 37%; left: 83%;
+    top: 33%; left: 83%;
   }
 
 }
