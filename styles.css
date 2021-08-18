@@ -236,7 +236,8 @@ img {
 
 
 #musicBox{
-  background-color: lightgray;
+  background-color: lightskyblue;
+  border: 1px black solid;
   display: inline;
   float: right;
 }

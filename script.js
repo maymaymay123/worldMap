@@ -15,6 +15,8 @@ document.querySelector("#musicBox").style.cursor="pointer";
 let myAudio = document.querySelector("#music");
 let isPlaying = false;
 
+
+//music on off
 function togglePlay() {
     isPlaying ? myAudio.pause() : myAudio.play();
 };
@@ -26,6 +28,7 @@ myAudio.onpause = function() {
     isPlaying = false;
 };
 
+//function to start the time, change every 1 second
 function startTimeFunction (event){
     event.preventDefault();
     myTimer();
@@ -64,8 +67,6 @@ function myTimer() {
         document.querySelector('#giveup').style.visibility="hidden";
     }
 
-
-
     if (countries.length === 0){
         stopTime();
         const congrat = document.createElement('div')
@@ -102,9 +103,9 @@ let northList=[];
 let southList =[];
 let europeList = [];
 let oceaniaList =[];
+
 // function to display correct answers on page, remove answers from the list, clear text-box if answer is incorrect
 function displayCorrectAnswer(inputValue){
-    
     const answerList = document.querySelector('#youranswerlist');
     let correctAnswer = false
     for (const item of countries) {
@@ -160,7 +161,6 @@ function displayCorrectAnswer(inputValue){
           countriesOceania.splice(countriesOceania.indexOf(item),1);
       }
     }
-    
 } 
 
 //standadize the input, to match the answer
@@ -226,7 +226,6 @@ function standardizeInput(inputValue){
 //stop the time 
 function stopTime() {
     clearInterval(time);
-
 }
 
 //Give up link
@@ -267,6 +266,7 @@ function continentScore (){
     document.querySelector('#europeScore').innerText = europeList.length+"/47";
     document.querySelector('#oceaniaScore').innerText = oceaniaList.length+"/14";
 }
+
 //hover the score to see the answer when time is out or give up
 document.querySelector("#africaScore").style.cursor="pointer";
 document.querySelector("#asiaScore").style.cursor="pointer";
@@ -353,8 +353,7 @@ function continentBox (){
     }
     africaDiv.innerText = africaText;
     africaId.append(africaDiv);
-
-
+    
 
     const asiaId = document.querySelector('#asia-box');
     const asiaTitle = document.createElement('div');
