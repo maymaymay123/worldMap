@@ -109,13 +109,18 @@ let oceaniaList =[];
 // function to display correct answers on page, remove answers from the list, clear text-box if answer is incorrect
 function displayCorrectAnswer(inputValue){
     const answerList = document.querySelector('#youranswerlist');
-    let correctAnswer = false
+    let correctAnswer = false;
     for (const item of countries) {
         if (inputValue.toLowerCase() === item.toLowerCase()){
-            correctAns.push(item)
-            const newDiv = document.createElement('div');
-            newDiv.innerText = item;
-            answerList.append(newDiv);
+            correctAns.push(item);
+            correctAns.sort();
+            document.querySelector('#youranswerlist').innerText="";
+
+            for (const item of correctAns){
+                const newDiv = document.createElement('div');
+                newDiv.innerText = item;
+                answerList.append(newDiv);
+            }
             countries.splice(countries.indexOf(item),1);
             document.querySelector('#message').innerText = "Correct: " + item;
             correctAnswer = true;
@@ -125,7 +130,17 @@ function displayCorrectAnswer(inputValue){
         showTheScore();   
     }
     if (correctAnswer === false) {
-        document.querySelector('#message').innerText = "Wrong answer or repeated answer: "+inputValue;
+        let repeatedAnswer = false;
+        for (const item of correctAns){
+            if (inputValue.toLowerCase() === item.toLowerCase())
+                repeatedAnswer = true;
+            }
+        if (repeatedAnswer === true){
+            document.querySelector('#message').innerText = "Repeated Answer: "+inputValue;
+        }
+        else{
+            document.querySelector('#message').innerText = "Wrong answer: "+inputValue;
+        }
     }
     for (const item of countriesAfrica) {
       if (inputValue.toLowerCase() === item.toLowerCase()){
