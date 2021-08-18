@@ -81,7 +81,6 @@ img {
   background-color: black;
   color: white;
   position: absolute;
-  z-index: 10;
   margin: 0 auto;
   top: 65%; left: 48%;
 }
@@ -122,7 +121,7 @@ img {
   position: absolute;
 }
 
-@media (max-width: 870px) {
+@media screen and (max-width: 870px) {
   img{
     max-width: 870px;
   }
@@ -133,7 +132,7 @@ img {
   
 }
 
-@media (max-width: 850px) {
+@media screen and (max-width: 850px) {
   img{
     max-width: 850px;
   }
@@ -163,7 +162,7 @@ img {
   
 }
 
-@media (max-width: 800px) {
+@media screen and (max-width: 800px) {
   img{
     max-width: 800px;
   }
@@ -173,7 +172,7 @@ img {
   }
 }
 
-@media (max-width: 750px) {
+@media screen and (max-width: 750px) {
   img{
     max-width: 750px;
   }
@@ -183,7 +182,7 @@ img {
   }
 }  
 
-@media (max-width: 700px) {
+@media screen and (max-width: 700px) {
   img{
     max-width: 700px;
   }
@@ -193,7 +192,7 @@ img {
   }
 }
   
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
   img{
     max-width: 600px;
   }
@@ -204,7 +203,27 @@ img {
   
 }
 
-@media (max-width: 400px) {
+@media (max-width: 520px) {
+  img{
+    max-width: 520px;
+  }
+  #oceaniaScore{
+    top: 72%; left: 86%;
+  }
+
+}
+@media screen and (max-width: 495px) {
+  img{
+    max-width: 495px;
+  }
+
+  #oceaniaScore{
+    top: 70%; left: 91%;
+  }
+  
+}
+
+@media screen and (max-width: 400px) {
   img{
     max-width: 400px;
   }
@@ -229,9 +248,36 @@ img {
     top: 43%; left: 50%;
   }
   #oceaniaScore{
-    top: 60%; left: 75%;
+    top: 60%; left: 89%;
   }
   
+}
+
+
+@media (max-width: 349px) {
+  #africaScore{
+    top: 70%; left: 70%;
+  }
+
+  #asiaScore{
+    top: 60%; left: 89%;
+  }
+
+  #northScore{
+    top: 60%; left: 17%;
+  }
+
+  #southScore{
+    top: 75%; left: 26%;
+  }
+
+  #europeScore{
+    top: 60%; left: 65%;
+  }
+  #oceaniaScore{
+    top: 75%; left: 105%;
+  }
+
 }
 
 
