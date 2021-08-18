@@ -300,31 +300,31 @@ document.querySelector("#africaScore").addEventListener('click', seeAnswerAfrica
 
 function seeAnswerAsia(event){
     document.querySelector("#asia-box").scrollIntoView();
-    document.querySelector('#asia-box').style.border="10px yellow solid";
+    document.querySelector('#asia-box').style.border="10px white solid";
 }
 document.querySelector("#asiaScore").addEventListener('click', seeAnswerAsia)
 
 function seeAnswerNorth(event){
     document.querySelector("#north-america-box").scrollIntoView();
-    document.querySelector('#north-america-box').style.border="10px yellow solid";
+    document.querySelector('#north-america-box').style.border="10px white solid";
 }
 document.querySelector("#northScore").addEventListener('click', seeAnswerNorth)
 
 function seeAnswerSouth(event){
     document.querySelector("#south-america-box").scrollIntoView();
-    document.querySelector('#south-america-box').style.border="10px yellow solid";
+    document.querySelector('#south-america-box').style.border="10px white solid";
 }
 document.querySelector("#southScore").addEventListener('click', seeAnswerSouth)
 
 function seeAnswerEurope(event){
     document.querySelector("#europe-box").scrollIntoView();
-    document.querySelector('#europe-box').style.border="10px yellow solid";
+    document.querySelector('#europe-box').style.border="10px white solid";
 }
 document.querySelector("#europeScore").addEventListener('click', seeAnswerEurope)
 
 function seeAnswerOceania(event){
     document.querySelector("#oceania-box").scrollIntoView();
-    document.querySelector('#oceania-box').style.border="10px yellow solid";
+    document.querySelector('#oceania-box').style.border="10px white solid";
 }
 document.querySelector("#oceaniaScore").addEventListener('click', seeAnswerOceania)
 
@@ -366,11 +366,12 @@ function continentBox (){
     const africaDiv = document.createElement('div');
     let africaText = ""
     for (const item of countriesAfrica) {
-      africaText = africaText + item + ", ";
+        let withlink = "<a href=\"https://www.google.com/search?q="+item+"+travel&tbm=isch\" target=\"_blank\">"+item+"</a>";
+        africaText = africaText + withlink + ", ";
     }
-    africaDiv.innerText = africaText;
+    africaDiv.innerHTML = africaText;
     africaId.append(africaDiv);
-    
+
 
     const asiaId = document.querySelector('#asia-box');
     const asiaTitle = document.createElement('div');
@@ -379,10 +380,17 @@ function continentBox (){
     const asiaDiv = document.createElement('div');
     let asiaText =""
     for (const item of countriesAsia){
-        asiaText = asiaText + item + ", ";
+        //let withlink = item.link("https://www.google.com/search?q="+item+"+travel&tbm=isch");
+        let withlink = "<a href=\"https://www.google.com/search?q="+item+"+travel&tbm=isch\" target=\"_blank\">"+item+"</a>";
+
+        //console.log(withlink)
+        asiaText = asiaText + withlink + ", ";
     }
-    asiaDiv.innerText = asiaText;
+    asiaDiv.innerHTML = asiaText;
     asiaId.append(asiaDiv);
+
+    
+
 
 
     const northId = document.querySelector('#north-america-box');
@@ -392,9 +400,10 @@ function continentBox (){
     const northDiv = document.createElement('div');
     let northText=""
     for (const item of countriesNorthAmerica){
-        northText = northText +item + ", ";
+        let withlink = "<a href=\"https://www.google.com/search?q="+item+"+travel&tbm=isch\" target=\"_blank\">"+item+"</a>";
+        northText = northText +withlink + ", ";
     }
-    northDiv.innerText = northText;
+    northDiv.innerHTML = northText;
     northId.append(northDiv);
 
 
@@ -405,9 +414,10 @@ function continentBox (){
     const southDiv = document.createElement('div');
     let southText = ""
     for (const item of countriesSouthAmerica){
-        southText = southText + item + ", ";
+        let withlink = "<a href=\"https://www.google.com/search?q="+item+"+travel&tbm=isch\" target=\"_blank\">"+item+"</a>";
+        southText = southText + withlink + ", ";
     }
-    southDiv.innerText = southText;
+    southDiv.innerHTML = southText;
     southId.append(southDiv);
 
 
@@ -418,9 +428,10 @@ function continentBox (){
     const europeDiv = document.createElement('div');
     let europeText = "";
     for (const item of countriesEurope){
-        europeText = europeText + item + ", ";
+        let withlink = "<a href=\"https://www.google.com/search?q="+item+"+travel&tbm=isch\" target=\"_blank\">"+item+"</a>";
+        europeText = europeText + withlink + ", ";
     }
-    europeDiv.innerText = europeText;
+    europeDiv.innerHTML = europeText;
     europeId.append(europeDiv);
 
 
@@ -431,9 +442,10 @@ function continentBox (){
     const oceaniaDiv = document.createElement('div');
     let oceaniaText = "";
     for (const item of countriesOceania){
-        oceaniaText = oceaniaText + item + ", ";
+        let withlink = "<a href=\"https://www.google.com/search?q="+item+"+travel&tbm=isch\" target=\"_blank\">"+item+"</a>";
+        oceaniaText = oceaniaText + withlink + ", ";
     }
-    oceaniaDiv.innerText = oceaniaText;
+    oceaniaDiv.innerHTML = oceaniaText;
     oceaniaId.append(oceaniaDiv);
 
 }

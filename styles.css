@@ -71,7 +71,7 @@ img {
 
 
 #continentScore{
-  position: relative;
+  position: absolute;
   display: inline-block;
   height: 100%;
   width: 100%;
@@ -303,7 +303,7 @@ img {
 }
 
 #asia-box{
-  background-color: orangered;
+  background-color: rgb(248, 160, 128);
   border-radius: 30px;
   border: 3px white solid;
   color: black;
@@ -313,7 +313,7 @@ img {
 }
 
 #north-america-box{
-  background-color: rgb(47, 224, 11);
+  background-color: rgb(153, 228, 138);
   border-radius: 30px;
   border: 3px white solid;
   color: black;
@@ -323,7 +323,7 @@ img {
 }
 
 #south-america-box{
-  background-color: green;
+  background-color: rgb(70, 201, 70);
   border-radius: 30px;
   border: 3px white solid;
   color: white;
@@ -333,7 +333,7 @@ img {
 }
 
 #europe-box{
-  background-color: red;
+  background-color: rgb(245, 94, 94);
   border-radius: 30px;
   border: 3px white solid;
   color: white;
@@ -344,7 +344,7 @@ img {
 }
 
 #oceania-box{
-  background-color: purple;
+  background-color: rgb(231, 152, 231);
   border-radius: 30px;
   border: 3px white solid;
   color: white;
