@@ -52,7 +52,7 @@ body {
   }
 
   #youranswerlist{
-    column-count: 7;
+    column-count: 5;
   }
 
   #correctTitle{
@@ -255,6 +255,9 @@ img {
 
 
 @media (max-width: 349px) {
+  img{
+    max-width: 349px;
+  }
   #africaScore{
     top: 70%; left: 70%;
   }
