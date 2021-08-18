@@ -72,7 +72,9 @@ function myTimer() {
         const congrat = document.createElement('div')
         congrat.innerText = 'Congratz! You did it!';
         document.querySelector('#congratz').append(congrat);
+        document.querySelector("#text-box").disabled = true;
         showTheScore();
+        percentageFunction(event)
 
     }
 }
