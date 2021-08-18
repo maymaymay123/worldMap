@@ -355,78 +355,30 @@ img {
     max-width: 345px;
   }
   #africaScore{
-    top: 35%; left: 50%;
+    visibility: hidden;
   }
 
   #asiaScore{
-    top: 27%; left: 69%;
+    visibility: hidden;
   }
 
   #northScore{
-    top: 27%; left: 17%;
+    visibility: hidden;
   }
 
   #southScore{
-    top: 38%; left: 26%;
+    visibility: hidden;
   }
 
   #europeScore{
-    top: 23%; left: 49%;
+    visibility: hidden;
   }
   #oceaniaScore{
-    top: 40%; left: 85%;
+    visibility: hidden;
   }
 
 }
 
-@media (max-width: 305px) {
-  body{
-    font-size: 5px;
-  }
-  img{
-    max-width: 305px;
-  }
-
-  #text-box{
-    font-size: 5px;
-  }
-
-  #resetbutton{
-    font-size: 5px
-  }
-
-  #start-btn{
-    font-size: 5px;
-  }
-
-  #submit-btn{
-    font-size: 5px;
-  }
-
-  #africaScore{
-    top: 25%; left: 50%;
-  }
-
-  #asiaScore{
-    top: 19%; left: 69%;
-  }
-
-  #northScore{
-    top: 20%; left: 17%;
-  }
-
-  #southScore{
-    top: 33%; left: 26%;
-  }
-
-  #europeScore{
-    top: 20%; left: 49%;
-  }
-  #oceaniaScore{
-    top: 33%; left: 83%;
-  }
-
-}
 #musicBox{
   background-color: lightskyblue;
   border: 1px black solid;
