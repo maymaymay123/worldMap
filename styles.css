@@ -268,7 +268,7 @@ img {
     top: 35%; left: 50%;
   }
   #oceaniaScore{
-    top: 56%; left: 85%;
+    top: 53%; left: 85%;
   }
 
 }
@@ -306,11 +306,15 @@ img {
   }
 }
 
-@media (max-width: 345px) {
+@media (max-width: 360px) {
   body{
     font-size: 6px;
   }
  
+  img{
+    max-width: 360px;
+  }
+
   #text-box{
     font-size: 6px;
   }
