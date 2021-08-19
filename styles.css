@@ -239,7 +239,7 @@ img {
   }
 
   #oceaniaScore{
-    top: 70%; left: 85%;
+    top: 65%; left: 85%;
   }
   
 }
@@ -251,14 +251,24 @@ img {
   img{
     max-width: 520px;
   }
+
+  #africaScore{
+    top: 45%; left: 50%;
+  }
+  #asiaScore{
+    top: 37%; left: 70%;
+  }
   #northScore{
-    top: 38%; left: 17%;
+    top: 35%; left: 17%;
   }
   #southScore{
-    top: 57%; left: 26%;
+    top: 54%; left: 26%;
+  }
+  #europeScore{
+    top: 35%; left: 50%;
   }
   #oceaniaScore{
-    top: 62%; left: 85%;
+    top: 56%; left: 85%;
   }
 
 }
@@ -273,63 +283,27 @@ img {
 
 
   #africaScore{
-    top: 47%; left: 53%;
+    top: 43%; left: 53%;
   }
 
   #asiaScore{
-    top: 35%; left: 76%;
+    top: 32%; left: 76%;
   }
 
   #northScore{
-    top: 35%; left: 20%;
+    top: 31%; left: 20%;
   }
 
   #southScore{
-    top: 55%; left: 27%;
+    top: 48%; left: 27%;
   }
   #europeScore{
-    top: 35%; left: 56%;
+    top: 30%; left: 54%;
   }
 
   #oceaniaScore{
-    top: 55%; left: 88%;
+    top: 48%; left: 88%;
   }
-
-
-  
-}
-
-
-@media (max-width: 390px) {
-  body{
-    font-size: 8px;
-  }
-  img{
-    max-width: 390px;
-  }
-  #africaScore{
-    top: 40%; left: 50%;
-  }
-
-  #asiaScore{
-    top: 30%; left: 69%;
-  }
-
-  #northScore{
-    top: 30%; left: 17%;
-  }
-
-  #southScore{
-    top: 45%; left: 26%;
-  }
-
-  #europeScore{
-    top: 30%; left: 45%;
-  }
-  #oceaniaScore{
-    top: 45%; left: 85%;
-  }
-
 }
 
 @media (max-width: 345px) {
@@ -355,78 +329,30 @@ img {
     max-width: 345px;
   }
   #africaScore{
-    top: 35%; left: 50%;
+    top: 30%; left: 52%;
   }
 
   #asiaScore{
-    top: 27%; left: 69%;
+    top: 23%; left: 69%;
   }
 
   #northScore{
-    top: 27%; left: 17%;
+    top: 21%; left: 17%;
   }
 
   #southScore{
-    top: 38%; left: 26%;
-  }
-
-  #europeScore{
-    top: 23%; left: 49%;
-  }
-  #oceaniaScore{
-    top: 40%; left: 85%;
-  }
-
-}
-
-@media (max-width: 305px) {
-  body{
-    font-size: 5px;
-  }
-  img{
-    max-width: 305px;
-  }
-
-  #text-box{
-    font-size: 5px;
-  }
-
-  #resetbutton{
-    font-size: 5px
-  }
-
-  #start-btn{
-    font-size: 5px;
-  }
-
-  #submit-btn{
-    font-size: 5px;
-  }
-
-  #africaScore{
-    top: 25%; left: 50%;
-  }
-
-  #asiaScore{
-    top: 19%; left: 69%;
-  }
-
-  #northScore{
-    top: 20%; left: 17%;
-  }
-
-  #southScore{
-    top: 33%; left: 26%;
+    top: 32%; left: 26%;
   }
 
   #europeScore{
     top: 20%; left: 49%;
   }
   #oceaniaScore{
-    top: 33%; left: 83%;
+    top: 34%; left: 85%;
   }
 
 }
+
 #musicBox{
   background-color: lightskyblue;
   border: 1px black solid;

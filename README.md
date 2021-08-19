@@ -9,6 +9,7 @@ But how many countries can you actually name?
 Hopefully throughout this game, it will bring you attention to some of the countries that you have never heard of, and thus, find out more about the countries in terms of their people, culture, religion, languages, political views, geography, etc.
 
 # Technologies used
-HTML, CSS and Javascript
+HTML, CSS and Vanilla Javascript
 
 # Link
+https://maymaymay123.github.io/worldmap/
